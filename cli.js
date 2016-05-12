@@ -1,5 +1,6 @@
 'use strict';
 
+const _ = require('lodash');
 const conf = require('rc')('cmdly');
 const vorpal = require('vorpal');
 const cmdlyCore = require('./cmdly-core');
@@ -11,8 +12,9 @@ app.use(cmdlyCore);
 app.use(cmdlyTricks);
 
 if (conf.extensions) {
-    console.log(conf.extensions);
-    // app.use(cmdlyTricks);
+    _.each(conf.extensions, (extension) => {
+        app.use(extension);
+    })
 }
 
 app

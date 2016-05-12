@@ -2,6 +2,6 @@
     "env": "qa",
     "debug": "true",
     "extensions": [
-        "baconize"
+        "cmdly-ext"
     ]
 }
