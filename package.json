@@ -1,0 +1,16 @@
+{
+  "name": "cmdly",
+  "version": "1.0.0",
+  "description": "",
+  "main": "cli.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "rc": "1.1.6",
+    "vorpal": "1.10.10",
+    "winston": "2.2.0"
+  }
+}
